@@ -53,9 +53,10 @@ justify-content: center;
     align-items: center;
     margin:20px;
     padding:20px;
-    transform: translateY(80%);
+    transform: translateY(40%);
     border:2px solid white;
     background:rgba(255, 255, 255, 0.349);
+   border-radius:6px;
     
 }
 input{
@@ -90,14 +91,14 @@ button:hover{
 
 }
 p{
-    font-size:24px;
+    font-size:18px;
     color:white;
     font-weight: 500;
     line-height: 40px;
 }
 
 span{
-    font-size:28px;
+    font-size:24px;
     color:white;
     font-weight: 600;
 }
