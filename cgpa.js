@@ -131,6 +131,18 @@ oo.setAttribute("id", "sub12");
 oo.setAttribute("class", "sub12");
 oo.setAttribute("onclick", "calc()");
 document.getElementById("but").appendChild(oo);
+for (var sub in subname){
+        var row=document.createElement("tr");
+        var c1=document.createElement("td");
+        var liyu = document.createTextNode(sub.toUpperCase());
+        c1.appendChild(liyu);
+        var c2=document.createElement("td");
+        liyu=document.createTextNode(subname[sub]);
+        c2.appendChild(liyu);
+        row.appendChild(c1);
+        row.appendChild(c2);
+        document.getElementById("subtable").appendChild(row);
+}
 }
 function calc(){
    
@@ -191,7 +203,6 @@ function calc(){
         liyu=document.createTextNode(credit[itr1]);
         c2.appendChild(liyu);
         var c3=document.createElement("td");
-
         liyu=document.createTextNode(grade[itr1].toUpperCase());
         c3.appendChild(liyu);
         row.appendChild(c1);
@@ -216,9 +227,17 @@ $(document).ready(function(){
         $(".main").addClass("hide");
         $(".list").removeClass("hide");
     });
+    $(".sub9").click(function(){
+        $(".codes").removeClass("hide");
+        
+    });
+    $(".close").click(function(){
+        $(".codes").addClass("hide");
+    });
     $(".sub12").click(function(){
         $(".list").addClass("hide");
         $(".result").removeClass("hide");
     });
+
 
 });
